@@ -53,3 +53,35 @@
                     </div>
                 </div>
             </nav>
+            
+    
+
+
+
+    <script src="js/aos.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/fancybox.umd.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var splide = new Splide(".splide", {
+                type: "loop",
+                autoplay: true,
+                interval: 2e3,
+                arrows: 0,
+                perPage: 3,
+                perMove: 1,
+                gap: "1rem",
+                pagination: 0,
+                breakpoints: {
+                    767: {
+                        perPage: 1,
+                        perMove: 1,
+                    },
+                },
+            });
+            splide.mount();
+        });
+    </script>
+</body>
+</html>
